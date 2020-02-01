@@ -1,6 +1,11 @@
 depth = -y
 var swinging = (getUpgradeLevel(UPGRADE_TYPE.AXE) > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
 
+if (global.dashCooldown > 0)
+{
+	global.dashCooldown -= 1
+}
+
 characterMovement(baseMoveSpeed, ifElse(swinging, sPlayerCutUp, sPlayerUp), ifElse(swinging, sPlayerCutDown, sPlayerDown), ifElse(swinging, sPlayerCutRight, sPlayerRight))
 
 if (swinging)
@@ -41,9 +46,4 @@ else
 			sprite_index = sPlayerRight
 			break
 	}
-}
-
-if (getUpgradeLevel(UPGRADE_TYPE.TELEPORT) > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED))
-{
-	// Do dash
 }
