@@ -12,3 +12,7 @@ enum BUTTON_EVENT {
 	RELEASED,
 	HELD
 }
+
+#macro TREE_TIER_1_HP 5
+#macro TREE_TIER_2_HP 10
+#macro TREE_TIER_3_HP 20

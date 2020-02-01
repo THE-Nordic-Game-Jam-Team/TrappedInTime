@@ -4,8 +4,14 @@ global.camX = 0
 global.camY = 0
 
 global.dashUnlocked = false
-global.axeLevel = ifElse(global.debug, 3, 0) // 0 = not unlocked
+global.axeLevel = ifElse(global.debug, 1, 1) // 0 = no axe
 global.timeLeft = 20
+global.loopNumber = 0
+
+// Pickups and upgrades
+global.wood[0] = 0
+global.wood[1] = 0
+global.wood[2] = 0
 
 // TODO: Implement name selection. Should have a 12 character limit so the generated seed does not cause an integer overflow
 global.playerName = "Cupcakes"

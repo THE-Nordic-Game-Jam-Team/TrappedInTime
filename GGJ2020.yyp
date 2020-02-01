@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0612a031-5278-4f8b-bffc-3c3810348bb9",
+            "Value": {
+                "id": "e3df4aaa-56fd-4333-b87e-31a8aedd9077",
+                "resourcePath": "sprites\\sWorkbench\\sWorkbench.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08dc1815-19f5-4ab8-a6bf-828cbda2d1ac",
             "Value": {
                 "id": "be5639db-ba68-402f-82c2-b0e0724a2791",
@@ -386,7 +394,7 @@
             "Key": "ce5fbb7e-4610-4b8e-a731-b15c0c0a67ac",
             "Value": {
                 "id": "fa5dc06c-db48-49d8-abcb-f27ae585c954",
-                "resourcePath": "scripts\\enums\\enums.yy",
+                "resourcePath": "scripts\\constants\\constants.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -412,6 +420,14 @@
                 "id": "7829b83b-0c62-4754-8542-255b3f7fe3b3",
                 "resourcePath": "sprites\\sPlayerRight\\sPlayerRight.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dca4a757-19b3-45a7-8f15-ffa3b733a729",
+            "Value": {
+                "id": "c080558c-73cb-4d78-8970-5020376ebf06",
+                "resourcePath": "objects\\oWorkbench\\oWorkbench.yy",
+                "resourceType": "GMObject"
             }
         },
         {

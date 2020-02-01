@@ -19,13 +19,19 @@ if (hitCooldown > 0)
 }
 
 // Hit cooldown so it doesn't take damage multiple times from one swing
-if (hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(spriteLeftX, spriteTopY, spriteRightX, spriteBottomY, oAxe, false, true))
+if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(spriteLeftX, spriteTopY, spriteRightX, spriteBottomY, oAxe, false, true))
 {
-	hp--
+	hp = max(hp - global.axeLevel, 0)
 	if (hp <= 0)
 	{
 		image_index = 1
-		// TODO: Spawn wood
+		var woodSpawns = irandom_range(3, 8)
+		repeat(woodSpawns)
+		{
+			var newWood = instance_create_depth(x, y, 0, oWood)
+			newWood.parentTree = self
+			newWood.rarity = rarity
+		}
 	}
 	else
 	{

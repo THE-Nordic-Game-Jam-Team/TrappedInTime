@@ -12,7 +12,10 @@ displayTime = round(displayTime * 100) * 0.01 // Do multiplication instead of di
 displayTime = ifElse (displayTime == round(displayTime), string(displayTime + ".00"), string(displayTime))
 
 draw_set_halign(fa_middle)
-draw_text(camera_get_view_width(view_get_camera(0)) / 2, 8, "Time\r\n" + displayTime)
+draw_text(camera_get_view_width(camera) / 2, 8, "Time\r\n" + displayTime)
+
+draw_set_halign(fa_right)
+draw_text(camera_get_view_width(camera) - 2, 2, "Loop " + string(global.loopNumber + 1))
 
 if (global.debug)
 {

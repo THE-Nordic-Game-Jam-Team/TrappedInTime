@@ -6,7 +6,8 @@ if (global.axeLevel > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
 {
 	if (!instance_exists(oAxe))
 	{
-		instance_create_depth(x, y, 0, oAxe)
+		var newAxe = instance_create_depth(x, y, 0, oAxe)
+		newAxe.swingDir = ifElse(buttonCheck(BUTTON_TYPE.LEFT, BUTTON_EVENT.HELD), -1, 1)
 	}
 }
 else
