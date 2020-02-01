@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "df2b9f75-bff4-4819-bfca-9cf48e579b15",
+            "Value": {
+                "id": "76354ca0-bae2-4d33-b7e9-3ed60a552f02",
+                "resourcePath": "scripts\\generateWater\\generateWater.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e3d06d54-69cc-41cf-9ed6-8fc64143f414",
             "Value": {
                 "id": "6379e680-1a64-4c77-a8ee-aa683f50eb9f",
@@ -404,6 +412,7 @@
         "6f83453c-6e43-4bf3-8ca0-178f6e09bafd",
         "99646d11-950d-4a95-a76a-715cef9ef011",
         "26358f5e-9283-4147-a22d-0c0e742a49cb",
+        "df2b9f75-bff4-4819-bfca-9cf48e579b15",
         "2e75f01a-4f4b-4875-8773-54e8914c357e",
         "ce5fbb7e-4610-4b8e-a731-b15c0c0a67ac"
     ],
