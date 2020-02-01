@@ -1,10 +1,10 @@
 if (instance_exists(oPlayer))
 {
 	x = oPlayer.x
-	y = oPlayer.y - 10
-	depth = oPlayer.depth - 1
+	y = oPlayer.y - ifElse(oPlayer.sprite_index == sPlayerCutDown, 5, 8)
+	depth = oPlayer.depth + ifElse(oPlayer.sprite_index == sPlayerCutUp, 1, -1)
 	
-	if (oPlayer.sprite_index == sPlayerRight)
+	if (oPlayer.sprite_index == sPlayerRight || oPlayer.sprite_index == sPlayerCutRight)
 	{
 		swingDir = oPlayer.image_xscale
 	}
