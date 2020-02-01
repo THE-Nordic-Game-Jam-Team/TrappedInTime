@@ -1,4 +1,4 @@
-var minX, minY, maxX, maxY, spawnCount, randX, randY, newInst, randRarityRoll, maxDistFromCenter, distFromCenter;
+var minX, minY, maxX, maxY, totalSpawns, spawnCount, randX, randY, newInst, randRarityRoll, maxDistFromCenter, distFromCenter;
 var retries = 0
 var rareTreeCount = 0
 var legendaryTreeCount = 0
@@ -8,17 +8,19 @@ minX = 32
 minY = 40
 maxX = room_width - 32
 maxY = room_height - 40
-spawnCount = 40
+totalSpawns = 60
+spawnCount = 0
 maxDistFromCenter = point_distance(0, 0, room_width/2, room_height/2)
 
-while (instance_number(oTree) < spawnCount)
+while (spawnCount < totalSpawns)
 {
 	randX = random_range(minX, maxX)
 	randY = random_range(minY, maxY)
 	if (!collision_circle(randX, randY, 40, oWall, false, false))
 	{
 		newInst = instance_create_layer(randX, randY, "Trees", oTree)
-		spawnCount--
+		spawnCount++
+		retries = 0
 		
 		// Set the rarity of the tree. Further from center = higher chance of rare tree. The distance effects the roll by up to 90.
 		// That means a max distance tree has a 100% chance of being max rarity while one in the center has a 10% chance.
@@ -41,7 +43,6 @@ while (instance_number(oTree) < spawnCount)
 		// Safety measure to prevent infinite loop if it can't find a valid position after multiple tries.
 		if (retries >= 10)
 		{
-			spawnCount = 0
 			break
 		}
 		else

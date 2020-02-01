@@ -2,7 +2,7 @@
     "id": "0612a031-5278-4f8b-bffc-3c3810348bb9",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sWorkbench",
+    "name": "sAxeWorkbench",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -33,6 +33,28 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "13f7dc60-f134-4f80-8f9f-03c58ae363c1",
+                    "LayerId": "457c49c0-ec24-4a1e-853e-348f756cd062"
+                }
+            ]
+        },
+        {
+            "id": "6ed53a43-2b58-4347-9af1-b2ab87548410",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "0612a031-5278-4f8b-bffc-3c3810348bb9",
+            "compositeImage": {
+                "id": "314d3e4d-1a12-4e75-aea5-20da1b601d22",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "6ed53a43-2b58-4347-9af1-b2ab87548410",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "4ea5c615-b0c2-4da8-b7b3-2a3808323c49",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "6ed53a43-2b58-4347-9af1-b2ab87548410",
                     "LayerId": "457c49c0-ec24-4a1e-853e-348f756cd062"
                 }
             ]

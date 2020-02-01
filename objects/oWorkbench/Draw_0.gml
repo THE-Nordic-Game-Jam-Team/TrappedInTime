@@ -1,6 +1,6 @@
 draw_self()
 
-if (global.axeLevel < 5)
+if (upgradeLevel < maxUpgradeLevel)
 {
-	draw_sprite(sprite_index, global.axeLevel, x, y)
+	draw_sprite(sprite_index, upgradeLevel + 1, x, y)
 }

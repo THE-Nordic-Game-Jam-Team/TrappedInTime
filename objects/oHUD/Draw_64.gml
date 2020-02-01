@@ -22,6 +22,7 @@ if (global.debug)
 {
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_bottom)
+	draw_text(0, viewport_height - 38, "Trees: " + string(instance_number(oTree)))
 	draw_text(0, viewport_height - 20, "HDir: " + string(buttonCheck(BUTTON_TYPE.RIGHT, BUTTON_EVENT.HELD) - buttonCheck(BUTTON_TYPE.LEFT, BUTTON_EVENT.HELD)))
 	draw_text(0, viewport_height - 2, "VDir: " + string(buttonCheck(BUTTON_TYPE.DOWN, BUTTON_EVENT.HELD) - buttonCheck(BUTTON_TYPE.UP, BUTTON_EVENT.HELD)))
 }

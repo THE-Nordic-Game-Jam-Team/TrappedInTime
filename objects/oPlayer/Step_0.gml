@@ -43,7 +43,7 @@ else
 	}
 }
 
-if (global.dashUnlocked && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED))
+if (global.teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED))
 {
 	// Do dash
 }
