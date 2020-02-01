@@ -103,6 +103,22 @@
             }
         },
         {
+            "Key": "2e75f01a-4f4b-4875-8773-54e8914c357e",
+            "Value": {
+                "id": "450808f2-5911-4d19-a6fb-dd4c5a648930",
+                "resourcePath": "scripts\\setTree\\setTree.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "39665b06-ace3-404a-bc89-85631f059d1c",
+            "Value": {
+                "id": "36ff46ba-9768-462b-b242-edbdd7bb5d66",
+                "resourcePath": "sprites\\sWall\\sWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f6b4674-98dc-41b6-bec5-6e126bfb97bb",
             "Value": {
                 "id": "83cd8fd6-cda9-4d33-98b5-2cdf5e5865d2",
@@ -114,7 +130,7 @@
             "Key": "4dd27549-cd31-4bf1-9897-87f3a9e7ee43",
             "Value": {
                 "id": "43d79bd8-a4f0-4dad-ba23-1834e6140e33",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rmGame\\rmGame.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -155,6 +171,14 @@
             "Value": {
                 "id": "cd4b5a3b-c74a-48c9-a8af-f86bf434b61a",
                 "resourcePath": "sprites\\sPlayerCollisionMask\\sPlayerCollisionMask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "79401e9c-cfd4-43e6-8160-61f0ab1f14fb",
+            "Value": {
+                "id": "b7072f26-3a8f-472d-9658-70848f045ed8",
+                "resourcePath": "sprites\\sTreeCollisionMask\\sTreeCollisionMask.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -347,7 +371,8 @@
         "66962ac8-78fa-4483-ac1e-1f8dced1986b",
         "6f83453c-6e43-4bf3-8ca0-178f6e09bafd",
         "99646d11-950d-4a95-a76a-715cef9ef011",
-        "26358f5e-9283-4147-a22d-0c0e742a49cb"
+        "26358f5e-9283-4147-a22d-0c0e742a49cb",
+        "2e75f01a-4f4b-4875-8773-54e8914c357e"
     ],
     "tutorial": ""
 }

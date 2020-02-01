@@ -12,6 +12,10 @@ enum BUTTON_EVENT {
 	HELD
 }
 
-global.debug = true
+global.debug = false
+
 global.camX = 0
 global.camY = 0
+
+// TODO: Implement seed-based randomization
+randomise()

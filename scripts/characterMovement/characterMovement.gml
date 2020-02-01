@@ -7,23 +7,27 @@ var upSprite = argument1
 var downSprite = argument2
 var rightSprite = argument3
 
-var hDir, vDir
+var hDir, vDir, pointDir
 hDir = buttonCheck(BUTTON_TYPE.RIGHT, BUTTON_EVENT.HELD) - buttonCheck(BUTTON_TYPE.LEFT, BUTTON_EVENT.HELD)
 vDir = buttonCheck(BUTTON_TYPE.DOWN, BUTTON_EVENT.HELD) - buttonCheck(BUTTON_TYPE.UP, BUTTON_EVENT.HELD)
+pointDir = point_direction(x, y, x + hDir, y + vDir)
 
-var adjustX = hDir * moveSpeed
-while (adjustX != 0 && !place_meeting(x + sign(adjustX), y, oWall))
+if (vDir != 0 || hDir != 0)
 {
-	x += sign(adjustX)
-	if (abs(adjustX) > 0)
-		adjustX -= sign(adjustX)
-}
-var adjustY = vDir * moveSpeed
-while (adjustY != 0 && !place_meeting(x, y + sign(adjustY), oWall))
-{
-	y += sign(adjustY)
-	if (abs(adjustY) > 0)
-		adjustY -= sign(adjustY)
+	var adjustX = ceil(lengthdir_x(moveSpeed, pointDir))
+	while (adjustX != 0 && !place_meeting(x + sign(adjustX), y, oWall))
+	{
+		x += sign(adjustX)
+		if (abs(adjustX) > 0)
+			adjustX -= sign(adjustX)
+	}
+	var adjustY = ceil(lengthdir_y(moveSpeed, pointDir))
+	while (adjustY != 0 && !place_meeting(x, y + sign(adjustY), oWall))
+	{
+		y += sign(adjustY)
+		if (abs(adjustY) > 0)
+			adjustY -= sign(adjustY)
+	}
 }
 
 if (vDir == 0 && hDir == 0)

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oWater",
     "eventList": [
-        
+        {
+            "id": "0ae55c92-4697-45ef-945d-a3e3e8dd5596",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "83f84f26-bb3d-4c52-96e8-566aa29b6642"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
