@@ -1,0 +1,14 @@
+enum BUTTON_TYPE {
+	LEFT,
+	RIGHT,
+	UP,
+	DOWN,
+	ATTACK,
+	DASH
+}
+
+enum BUTTON_EVENT {
+	PRESSED,
+	RELEASED,
+	HELD
+}

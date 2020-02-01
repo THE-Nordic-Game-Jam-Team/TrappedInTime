@@ -22,6 +22,9 @@ switch(type)
 	case BUTTON_TYPE.ATTACK:
 		keyboardBtn = vk_space
 		break
+	case BUTTON_TYPE.DASH:
+		keyboardBtn = vk_shift
+		break
 }
 
 switch(event)
