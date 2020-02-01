@@ -16,7 +16,7 @@ while (spawnCount < totalSpawns)
 {
 	randX = random_range(minX, maxX)
 	randY = random_range(minY, maxY)
-	if (!collision_circle(randX, randY, 40, oWall, false, false))
+	if (!collision_circle(randX, randY, 40, oWall, false, false) && !position_meeting(randX, randY, oStartZone))
 	{
 		newInst = instance_create_layer(randX, randY, "Trees", oTree)
 		spawnCount++

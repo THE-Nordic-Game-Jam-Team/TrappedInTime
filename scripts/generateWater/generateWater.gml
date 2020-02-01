@@ -11,7 +11,7 @@ while (spawnCount < totalSpawns)
 {
 	randX = random_range(minX, maxX)
 	randY = random_range(minY, maxY)
-	if (!position_meeting(randX, randY, oWall))
+	if (!position_meeting(randX, randY, oWall) && !position_meeting(randX, randY, oStartZone))
 	{
 		newInst = instance_create_layer(randX, randY, "Water", oWater)
 		with (newInst)
