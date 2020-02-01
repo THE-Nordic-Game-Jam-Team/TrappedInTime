@@ -1,4 +1,4 @@
 if (room == rmGame)
 {
-	generateTrees()
+	generateRoom()
 }

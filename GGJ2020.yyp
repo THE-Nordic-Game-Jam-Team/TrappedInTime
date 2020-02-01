@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "565843da-6464-472f-8037-f085be98dc0f",
+            "Value": {
+                "id": "1b4d9765-6104-40a8-b934-3d8faf35bc1f",
+                "resourcePath": "views\\565843da-6464-472f-8037-f085be98dc0f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "56ff760e-2215-4cdb-a847-47031950e534",
             "Value": {
                 "id": "3601c2d5-0672-410e-afe1-0a4da64e5ea9",
@@ -156,6 +164,14 @@
                 "id": "cd60ead1-a2a5-409d-b36a-9d0a06ad106e",
                 "resourcePath": "objects\\oGlobalController\\oGlobalController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5c828c52-5e47-4c3b-8866-b91a8408f18a",
+            "Value": {
+                "id": "fc9fbb9e-e028-4954-9297-d438f0732f91",
+                "resourcePath": "scripts\\generateRoom\\generateRoom.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -411,10 +427,11 @@
         "66962ac8-78fa-4483-ac1e-1f8dced1986b",
         "6f83453c-6e43-4bf3-8ca0-178f6e09bafd",
         "99646d11-950d-4a95-a76a-715cef9ef011",
-        "26358f5e-9283-4147-a22d-0c0e742a49cb",
-        "df2b9f75-bff4-4819-bfca-9cf48e579b15",
         "2e75f01a-4f4b-4875-8773-54e8914c357e",
-        "ce5fbb7e-4610-4b8e-a731-b15c0c0a67ac"
+        "ce5fbb7e-4610-4b8e-a731-b15c0c0a67ac",
+        "5c828c52-5e47-4c3b-8866-b91a8408f18a",
+        "26358f5e-9283-4147-a22d-0c0e742a49cb",
+        "df2b9f75-bff4-4819-bfca-9cf48e579b15"
     ],
     "tutorial": ""
 }

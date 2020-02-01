@@ -1,19 +1,23 @@
 /// Spawn more water
 // Spread water to adjacent spaces so we get little pools. Odds of spread decreases further from source, to keep them from growing too large
-var newWater
+var newWater, hOffset, vOffset
+var dir = 0
 
-for (var hOffset = -1; hOffset <= 1; hOffset += 2)
+while (dir < 360)
 {
-	for (var vOffset = -1; vOffset <= 1; vOffset += 2)
+	var hOffset = lengthdir_x(sprite_width, dir)
+	var vOffset = lengthdir_y(sprite_height, dir)
+	
+	var roll = random_range(1, 10) - (distFromSource * 0.5)
+	if (roll >= 7)
 	{
-		var roll = random_range(1, 10) - distFromSource
-		if (roll >= 7)
+		newWater = instance_create_layer(x + hOffset, y + vOffset, "Water", oWater)
+		with (newWater)
 		{
-			newWater = instance_create_layer(x + sprite_width * hOffset, y + sprite_height * vOffset, "Water", oWater)
-			with (newWater)
-			{
-				
-			}
+			distFromSource = other.distFromSource + 1
+			event_user(0)
 		}
 	}
+	
+	dir += 90
 }
