@@ -1,6 +1,7 @@
  // The tree that creates this wood will set these
 parentTree = noone
 rarity = 0
+canMagnet = false
 
 image_speed = 0
 // Tree will set image_index based on rarity of the tree it came from

@@ -1,7 +1,7 @@
 depth = -y
 var swinging = (getUpgradeLevel(UPGRADE_TYPE.AXE) > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
 
-characterMovement(moveSpeed, ifElse(swinging, sPlayerCutUp, sPlayerUp), ifElse(swinging, sPlayerCutDown, sPlayerDown), ifElse(swinging, sPlayerCutRight, sPlayerRight))
+characterMovement(baseMoveSpeed, ifElse(swinging, sPlayerCutUp, sPlayerUp), ifElse(swinging, sPlayerCutDown, sPlayerDown), ifElse(swinging, sPlayerCutRight, sPlayerRight))
 
 if (swinging)
 {

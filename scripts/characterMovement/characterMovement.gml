@@ -7,6 +7,9 @@ var upSprite = argument1
 var downSprite = argument2
 var rightSprite = argument3
 
+// Apply any upgrades to the player's speed
+moveSpeed += getUpgradeLevel(UPGRADE_TYPE.MOVE_SPEED)
+
 var hDir, vDir, pointDir
 hDir = buttonCheck(BUTTON_TYPE.RIGHT, BUTTON_EVENT.HELD) - buttonCheck(BUTTON_TYPE.LEFT, BUTTON_EVENT.HELD)
 vDir = buttonCheck(BUTTON_TYPE.DOWN, BUTTON_EVENT.HELD) - buttonCheck(BUTTON_TYPE.UP, BUTTON_EVENT.HELD)

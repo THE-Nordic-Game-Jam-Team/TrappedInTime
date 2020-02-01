@@ -1,4 +1,3 @@
 global.loopNumber++
 global.timeLeft = 20
-
-//room_restart()
+global.wood = array_create(3, ifElse(global.debug, 50, 0))

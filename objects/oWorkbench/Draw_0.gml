@@ -26,6 +26,7 @@ if (upgradeLevel < maxUpgradeLevel)
 			{
 				draw_sprite(sWood, i, x - 8, y - 55 - (12 * typesDrawn))
 				draw_text(x + 2, y - 55 - (12 * typesDrawn), string(costVal))
+				typesDrawn++
 			}
 		}
 	}

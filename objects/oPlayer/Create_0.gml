@@ -1,2 +1,2 @@
-moveSpeed = 6
+baseMoveSpeed = 4
 image_speed = 0
