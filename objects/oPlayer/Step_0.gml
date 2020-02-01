@@ -1,5 +1,5 @@
 depth = -y
-var swinging = (global.axeLevel > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
+var swinging = (getUpgradeLevel(UPGRADE_TYPE.AXE) > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
 
 characterMovement(moveSpeed, ifElse(swinging, sPlayerCutUp, sPlayerUp), ifElse(swinging, sPlayerCutDown, sPlayerDown), ifElse(swinging, sPlayerCutRight, sPlayerRight))
 
@@ -43,7 +43,7 @@ else
 	}
 }
 
-if (global.teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED))
+if (getUpgradeLevel(UPGRADE_TYPE.TELEPORT) > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED))
 {
 	// Do dash
 }

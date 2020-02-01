@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "a60cb6c1-ddc5-43d7-b4aa-0f8675c8c1d3",
+            "Value": {
+                "id": "368f57d8-3811-4b9a-80eb-e47d675c5986",
+                "resourcePath": "scripts\\getUpgradeLevel\\getUpgradeLevel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a64b8938-0629-4e8f-99b3-8cadd8da8ba9",
             "Value": {
                 "id": "d76a7876-46eb-41d8-8fcf-d4ac27c7f238",
@@ -508,6 +516,14 @@
                 "id": "d65dddcb-47c6-48ce-9ee9-aba7f0fa621c",
                 "resourcePath": "sprites\\sPlayerDown\\sPlayerDown.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c75a114d-d869-4d0b-a48c-72bdbb9b053f",
+            "Value": {
+                "id": "49536d71-b854-44d2-8831-b68baae470f7",
+                "resourcePath": "fonts\\fntResources\\fntResources.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -691,7 +707,8 @@
         "a81c5bb9-e702-4c75-8405-56663aec2bf2",
         "89da0c4e-777f-41e7-bbc9-7ff3663a6abc",
         "142d8caf-4886-4d16-ac92-2a4a0ddce71d",
-        "905c4b8a-4a6d-40a6-9c3f-8aaf8fa40363"
+        "905c4b8a-4a6d-40a6-9c3f-8aaf8fa40363",
+        "a60cb6c1-ddc5-43d7-b4aa-0f8675c8c1d3"
     ],
     "tutorial": ""
 }

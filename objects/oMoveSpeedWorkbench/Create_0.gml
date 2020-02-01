@@ -1,3 +1,4 @@
 event_inherited()
-upgradeLevel = global.moveSpeedLevel
+type = UPGRADE_TYPE.MOVE_SPEED
+upgradeLevel = getUpgradeLevel(type)
 maxUpgradeLevel = 3

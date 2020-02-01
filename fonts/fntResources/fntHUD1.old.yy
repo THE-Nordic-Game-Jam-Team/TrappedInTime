@@ -4,7 +4,7 @@
     "mvc": "1.1",
     "name": "fntHUD",
     "AntiAlias": 1,
-    "TTFName": "${project_dir}\\fonts\\fntHUD\\Roboto-Bold.ttf",
+    "TTFName": "",
     "ascenderOffset": 0,
     "bold": true,
     "charset": 0,
@@ -1454,7 +1454,7 @@
         }
     ],
     "hinting": 0,
-    "includeTTF": true,
+    "includeTTF": false,
     "interpreter": 0,
     "italic": false,
     "kerningPairs": [

@@ -8,11 +8,9 @@ global.loopNumber = 0
 
 // Pickups and upgrades
 global.wood = array_create(3, 0)
-global.axeLevel = 1 // 0 = no axe. not in use
-global.teleportLevel = 0
-global.shieldLevel = 0
-global.moveSpeedLevel = 0
-global.magnetLevel = 0
+// MUST match size of enum in constants
+global.upgradeLevel = array_create(6, 0)
+global.upgradeLevel[UPGRADE_TYPE.AXE] = 1 // Initialize axe to 1, because 0 = no axe and we want to start with it
 global.upgradeCosts = setupUpgradeCosts()
 
 // TODO: Implement name selection. Should have a 12 character limit so the generated seed does not cause an integer overflow

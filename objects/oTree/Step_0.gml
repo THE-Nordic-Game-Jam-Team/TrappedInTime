@@ -21,7 +21,7 @@ if (hitCooldown > 0)
 // Hit cooldown so it doesn't take damage multiple times from one swing
 if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(spriteLeftX, spriteTopY, spriteRightX, spriteBottomY, oAxe, false, true))
 {
-	hp = max(hp - global.axeLevel, 0)
+	hp = max(hp - getUpgradeLevel(UPGRADE_TYPE.AXE), 0)
 	if (hp <= 0)
 	{
 		image_index = 1

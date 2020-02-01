@@ -1,3 +1,4 @@
 event_inherited()
-upgradeLevel = global.shieldLevel
+type = UPGRADE_TYPE.SHIELD
+upgradeLevel = getUpgradeLevel(type)
 maxUpgradeLevel = 3

@@ -1,3 +1,4 @@
 event_inherited()
-upgradeLevel = global.teleportLevel
+type = UPGRADE_TYPE.TELEPORT
+upgradeLevel = getUpgradeLevel(type)
 maxUpgradeLevel = 3

@@ -4,7 +4,8 @@ enum BUTTON_TYPE {
 	UP,
 	DOWN,
 	ATTACK,
-	DASH
+	DASH,
+	UPGRADE
 }
 
 enum BUTTON_EVENT {

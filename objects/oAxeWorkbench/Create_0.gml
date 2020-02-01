@@ -1,3 +1,4 @@
 event_inherited()
-upgradeLevel = global.axeLevel
+type = UPGRADE_TYPE.AXE
+upgradeLevel = getUpgradeLevel(type)
 maxUpgradeLevel = 5

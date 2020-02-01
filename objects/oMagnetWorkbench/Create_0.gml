@@ -1,3 +1,4 @@
 event_inherited()
-upgradeLevel = global.magnetLevel
+type = UPGRADE_TYPE.MAGNET
+upgradeLevel = getUpgradeLevel(type)
 maxUpgradeLevel = 2
