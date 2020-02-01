@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "2315709d-1ceb-4776-b9b2-8de1fdd5f5de",
+            "Value": {
+                "id": "0063e21e-acc9-4367-aa4b-726d8ccf3959",
+                "resourcePath": "sprites\\sTimeTear\\sTimeTear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26358f5e-9283-4147-a22d-0c0e742a49cb",
             "Value": {
                 "id": "d91b75dc-1282-4afc-a8d8-b7345c3ad212",
@@ -167,6 +175,14 @@
             }
         },
         {
+            "Key": "597c055d-09c1-41f3-b771-ae5ac4ae4d6d",
+            "Value": {
+                "id": "53de5e52-8dfa-4551-869b-2713782a1a9c",
+                "resourcePath": "objects\\oTimeTear\\oTimeTear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5c828c52-5e47-4c3b-8866-b91a8408f18a",
             "Value": {
                 "id": "fc9fbb9e-e028-4954-9297-d438f0732f91",
@@ -183,11 +199,27 @@
             }
         },
         {
+            "Key": "6b2f38f1-e82f-42ce-b58a-15fca9c661f0",
+            "Value": {
+                "id": "a437411d-7cfc-43e9-bf73-0af68b84f60c",
+                "resourcePath": "sprites\\sLegendaryTree1\\sLegendaryTree1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6f83453c-6e43-4bf3-8ca0-178f6e09bafd",
             "Value": {
                 "id": "7da479c0-16cd-42ff-9aee-b93699799a02",
                 "resourcePath": "scripts\\buttonCheck\\buttonCheck.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "74732f7d-92e4-4581-ae60-d332646fcc76",
+            "Value": {
+                "id": "cf09fc77-23c7-41e0-bfbf-c6e5059608ba",
+                "resourcePath": "sprites\\sRareTree2\\sRareTree2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -263,11 +295,27 @@
             }
         },
         {
+            "Key": "a847b179-8657-48b9-9be1-653862979f46",
+            "Value": {
+                "id": "547e3f0c-59d1-46d0-aedb-5923639565d1",
+                "resourcePath": "sprites\\sWood\\sWood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "3baf0c47-f84a-4744-870a-1e007e46a18e",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aa11bc9f-570a-4a0b-abb0-c771c28971da",
+            "Value": {
+                "id": "3989d6a8-cb56-4fb4-b77f-18a193a08cfe",
+                "resourcePath": "objects\\oAxe\\oAxe.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -295,6 +343,14 @@
             }
         },
         {
+            "Key": "c519bcb5-7810-4538-b295-4b492dd3aace",
+            "Value": {
+                "id": "58ca4b6d-16e5-441f-a281-a6c085588e73",
+                "resourcePath": "sprites\\sLegendaryTree2\\sLegendaryTree2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c602b3cb-15ff-4bf3-8920-946a9447c1ce",
             "Value": {
                 "id": "d65dddcb-47c6-48ce-9ee9-aba7f0fa621c",
@@ -308,6 +364,14 @@
                 "id": "5128dbcc-5df5-43db-ad2b-28fc55e79d53",
                 "resourcePath": "views\\c8bfa9ea-c9b9-4420-b3c5-928883bd816e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ca3685b3-66bb-439a-a025-1636d8f7e082",
+            "Value": {
+                "id": "f7629aec-7e6c-4638-937d-0da6caf07992",
+                "resourcePath": "sprites\\sRareTree1\\sRareTree1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -367,6 +431,14 @@
             }
         },
         {
+            "Key": "e08bfa76-08e3-4300-ae62-17255e9c81c5",
+            "Value": {
+                "id": "78aad6cd-bd5b-40b6-a654-458b78d00247",
+                "resourcePath": "objects\\oWood\\oWood.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e3d06d54-69cc-41cf-9ed6-8fc64143f414",
             "Value": {
                 "id": "6379e680-1a64-4c77-a8ee-aa683f50eb9f",
@@ -380,6 +452,14 @@
                 "id": "2ee67d91-6cb3-424f-b2fe-b12672e8d232",
                 "resourcePath": "views\\e8310fef-1293-44ab-bd8c-42e60c28696f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e927a2e3-1a2e-4558-bd8c-080cef7cdb8c",
+            "Value": {
+                "id": "416a114b-d29c-4e05-848a-f015d30b8140",
+                "resourcePath": "sprites\\sAxeCollisionMask\\sAxeCollisionMask.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -427,11 +507,11 @@
         "66962ac8-78fa-4483-ac1e-1f8dced1986b",
         "6f83453c-6e43-4bf3-8ca0-178f6e09bafd",
         "99646d11-950d-4a95-a76a-715cef9ef011",
-        "2e75f01a-4f4b-4875-8773-54e8914c357e",
         "ce5fbb7e-4610-4b8e-a731-b15c0c0a67ac",
         "5c828c52-5e47-4c3b-8866-b91a8408f18a",
         "26358f5e-9283-4147-a22d-0c0e742a49cb",
-        "df2b9f75-bff4-4819-bfca-9cf48e579b15"
+        "df2b9f75-bff4-4819-bfca-9cf48e579b15",
+        "2e75f01a-4f4b-4875-8773-54e8914c357e"
     ],
     "tutorial": ""
 }
