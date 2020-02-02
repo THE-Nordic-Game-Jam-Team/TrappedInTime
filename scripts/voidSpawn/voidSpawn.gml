@@ -1,9 +1,5 @@
 //logic for spawning VOID
 
-var difficultyrating=0;
-var difficultyratingMax=10 //max limit spawn rate we alow for sanity sake
-
-
 difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.AXE]-1
 difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.TEAR]*2
 difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.MAGNET]

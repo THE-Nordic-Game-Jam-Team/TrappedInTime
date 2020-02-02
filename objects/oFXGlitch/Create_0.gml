@@ -8,3 +8,5 @@ color=choose(c_red,c_black,c_yellow)
 camera = view_get_camera(0)
 camerax = camera_get_view_x(camera)
 cameray = camera_get_view_y(camera)
+
+audio_play_sound(sndGlitch,0,0)

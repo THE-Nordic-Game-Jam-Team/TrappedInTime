@@ -13,6 +13,8 @@ if (nameLength > 0)
 {
 	if (buttonCheck(BUTTON_TYPE.START, BUTTON_EVENT.PRESSED))
 	{
+		audio_stop_all()
+		audio_play_sound(sndPickup,0,0)
 		room_goto(rmGame)
 	}
 	else if (keyboard_check(vk_backspace) && backspaceCooldown <= 0)

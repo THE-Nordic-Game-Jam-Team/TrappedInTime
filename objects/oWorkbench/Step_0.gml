@@ -9,6 +9,7 @@ if (upgradeLevel < maxUpgradeLevel)
 		{
 			upgradeLevel++
 			event_user(1)
+			audio_play_sound(sndUpgrade,0,0)
 		}
 	}
 }

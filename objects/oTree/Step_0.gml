@@ -35,6 +35,7 @@ if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(sp
 		
 		var effectspawn=instance_create_layer(x,y,"Instances",oFX)
 		effectspawn.sprite_index=sFXTreeCut
+		audio_play_sound(sndWoodHitComplete,0,0)
 	}
 	else
 	{
@@ -47,6 +48,8 @@ if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(sp
 		var newDebris = instance_create_depth(x, y, 0, oDebris)
 		newDebris.rarity = rarity
 		}
+		
+		audio_play_sound(sndWoodHit,0,0)
 			
 		hitCooldown = hitCooldownMax//room_speed / 2
 	}

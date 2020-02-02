@@ -10,4 +10,56 @@ display_set_gui_size(viewport_width, viewport_height)
 if (room == rmGame)
 {
 	generateRoom()
+
+	musicset=choose(0,1)
+	switch(global.upgradeLevel[UPGRADE_TYPE.TEAR])
+	{
+		case 0: 
+		{
+			if musicset==0
+				audio_play_sound(mscGameA_0,0,1);
+			else
+				audio_play_sound(mscGameB_0,0,1);
+			break;
+		}
+		case 1: 
+		{
+			if musicset==0
+				audio_play_sound(mscGameA_1,0,1);
+			else
+				audio_play_sound(mscGameB_1,0,1);
+			break;
+		}
+		case 2: 
+		case 3:
+		{
+			if musicset==0
+				audio_play_sound(mscGameA_2,0,1);
+			else
+				audio_play_sound(mscGameB_2,0,1);
+			break;
+		}
+		case 4: 
+		case 5:
+		{
+			if musicset==0
+				audio_play_sound(mscGameA_3,0,1);
+			else
+				audio_play_sound(mscGameB_3,0,1);
+			break;
+		}
+		case 6: 
+		{
+			if musicset==0
+				audio_play_sound(mscGameA_4,0,1);
+			else
+				audio_play_sound(mscGameB_4,0,1);
+			break;
+		}
+
+		default:
+			break;
+	}
+
+
 }

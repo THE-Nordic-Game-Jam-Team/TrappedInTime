@@ -12,3 +12,8 @@ clipboardUsed = false
 // That little line in the textbox that lets you know you can type something by alternating between visible and not visible
 charCursorToggle = false
 alarm[0] = room_speed * 0.75
+
+image_speed=.1
+
+
+audio_play_sound(mscTitle,0,1)

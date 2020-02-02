@@ -1,5 +1,5 @@
 depth = -y
-if (global.countdown > 0)
+if (global.countdown > 0) 
 {
 	// Player is unable to act during countdown
 	sprite_index = sPlayerPhaseIn
@@ -21,6 +21,7 @@ if (global.dashCooldown > 0)
 	global.dashCooldown -= 1
 }
 
+if !global.win
 characterMovement(baseMoveSpeed, ifElse(swinging, sPlayerCutUp, sPlayerUp), ifElse(swinging, sPlayerCutDown, sPlayerDown), ifElse(swinging, sPlayerCutRight, sPlayerRight))
 
 if (swinging)
@@ -81,7 +82,7 @@ if shieldImage2>=10
 	
 	
 //wood custom collision
-var woodcol=collision_circle(x,y-4,15,oWood,0,0)
+var woodcol=collision_circle(x,y-4,16,oWood,0,0)
 
 if woodcol
 {
@@ -93,6 +94,7 @@ if woodcol
 			var effectspawn=instance_create_layer(x,y,"Instances",oFX)
 			effectspawn.sprite_index=sFXPickupGet
 		
+			audio_play_sound(sndPickup,0,0)
 			instance_destroy()
 		}
 	}	

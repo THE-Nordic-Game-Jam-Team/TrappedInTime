@@ -1,5 +1,9 @@
-if (y + sprite_height < 0)
+if (y + sprite_height < 400)
 {
-	audio_stop_all()
-	game_restart()
+	speed=0
+	//audio_stop_all()
+	if !audio_is_playing(mscCreditsTrue)
+	{
+		game_restart()
+	}
 }

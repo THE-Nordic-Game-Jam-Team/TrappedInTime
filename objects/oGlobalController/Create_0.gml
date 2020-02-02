@@ -1,4 +1,4 @@
-global.debug = false
+global.debug = 1
 
 global.camX = 0
 global.camY = 0
@@ -7,7 +7,7 @@ global.timeLeft = 20
 global.loopNumber = 0
 
 // Pickups and upgrades
-global.wood = array_create(3, ifElse(global.debug, 50, 0))
+global.wood = array_create(3, ifElse(global.debug, 999999, 0))
 // MUST match size of enum in constants
 global.upgradeLevel = array_create(6, 0)
 global.upgradeLevel[UPGRADE_TYPE.AXE] = 1 // Initialize axe to 1, because 0 = no axe and we want to start with it
@@ -17,8 +17,16 @@ global.shieldHits = 0
 global.playerName = ""
 global.countdown = room_speed * 3 // This will start counting down when the game begins
 global.gp = undefined
+global.win = false
 
 randomise() // Seed set based on player name in generateRoom script
 
 voidSpawnRateMax=60
 voidSpawnRate=0
+
+difficultyrating=0;
+difficultyratingMax=10 //max limit spawn rate we alow for sanity sake
+
+
+musicval=0 //stage
+musicset=0 //set a or b

@@ -6,6 +6,7 @@ direction=90
 
 audio_stop_all()
 //show_message("F")
+audio_play_sound(mscCreditsFake,0,0)
 
 if global.loopNumber > 0
 speed=5

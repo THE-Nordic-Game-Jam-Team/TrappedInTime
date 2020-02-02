@@ -12,3 +12,6 @@ if distance_to_object(oPlayer)>1000
 
 
 color=make_color_hsv(random(255),random(150),random(255))
+
+if global.win==true
+	instance_destroy()

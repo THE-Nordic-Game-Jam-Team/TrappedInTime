@@ -22,7 +22,14 @@ displayTime = ifElse (displayTime == round(displayTime), string(displayTime) + "
 
 draw_set_valign(fa_top)
 draw_set_halign(fa_middle)
-drawTextWithOutline(viewport_width / 2, 8, "Time\r\n" + displayTime)
+if damageDuration>0
+{
+	drawTextWithOutlineCustomColor(viewport_width / 2, 8, "Time\r\n" + displayTime,c_white,c_red)
+	if irandom(2)==0
+	drawTextWithOutlineCustomColor(viewport_width / 2, 8, "Time\r\n" + displayTime,c_red,c_black)
+}
+else
+	drawTextWithOutline(viewport_width / 2, 8, "Time\r\n" + displayTime)
 
 draw_set_halign(fa_right)
 drawTextWithOutline(viewport_width - 4, 4, "Loop " + string(global.loopNumber + 1))
