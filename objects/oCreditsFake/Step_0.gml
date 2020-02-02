@@ -1,11 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-if y<-400
+if (y < -400 || buttonCheck(BUTTON_TYPE.START, BUTTON_EVENT.PRESSED))
 {
-//show_message("2F")
 	audio_stop_all()
-	newLoop()
 	room_goto(rmGame)
+	newLoop()
 }

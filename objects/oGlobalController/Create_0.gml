@@ -1,4 +1,4 @@
-global.debug = 0
+global.debug = false
 
 global.camX = 0
 global.camY = 0
@@ -14,8 +14,7 @@ global.upgradeLevel[UPGRADE_TYPE.AXE] = 1 // Initialize axe to 1, because 0 = no
 global.upgradeCosts = setupUpgradeCosts()
 global.shieldHits = 0
 
-// TODO: Implement name selection. Should have a 12 character limit so the generated seed does not cause an integer overflow
-global.playerName = "Cupcakes"
+global.playerName = ""
 
 randomise() // Seed set based on player name in generateRoom script
 

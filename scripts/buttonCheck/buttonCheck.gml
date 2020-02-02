@@ -35,6 +35,10 @@ switch(type)
 		keyboardBtn1 = ord("E")
 		keyboardBtn2 = ord("C")
 		break
+	case BUTTON_TYPE.START:
+		keyboardBtn1 = vk_enter
+		keyboardBtn2 = vk_enter
+		break
 }
 
 switch(event)
