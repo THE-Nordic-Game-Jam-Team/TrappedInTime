@@ -1,12 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
-//global.upgradeLevel[UPGRADE_TYPE.TEAR]=5
-image_speed=.3
+event_inherited()
 
-image_speed+=global.upgradeLevel[UPGRADE_TYPE.TEAR]
+type = UPGRADE_TYPE.TEAR
+upgradeLevel = getUpgradeLevel(type)
+maxUpgradeLevel = 7
+costs = array_create(3, 0)
+playerInRange = false
 
-xScaleRNG=global.upgradeLevel[UPGRADE_TYPE.TEAR]/20
-yScaleRNG=global.upgradeLevel[UPGRADE_TYPE.TEAR]/4
+image_speed = .3
+
+xScaleRNG = 0
+yScaleRNG = 0
 
 color=c_white
 color2=c_white

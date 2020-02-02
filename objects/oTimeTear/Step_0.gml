@@ -1,14 +1,39 @@
-/// @description Insert description here
-// You can write your code in this editor
+if (upgradeLevel < maxUpgradeLevel)
+{
+	costs = global.upgradeCosts[type, upgradeLevel + 1]
+	playerInRange = instance_exists(oPlayer) && distance_to_object(oPlayer) <= 10
+	if (playerInRange && buttonCheck(BUTTON_TYPE.UPGRADE, BUTTON_EVENT.PRESSED))
+	{
+		var success = purchaseUpgrade(costs, type)
+		if (success)
+		{
+			upgradeLevel++
+			if (upgradeLevel >= maxUpgradeLevel)
+			{
+				// YOU WON DA GAME. TAKE ME TO DA REAL CREDITS
+			}
+		}
+	}
+}
+else
+{
+	costs = array_create(3, 0)
+}
+
+// Visual effects stuff below
+image_speed = .3 + upgradeLevel
+
+xScaleRNG = upgradeLevel * 0.05
+yScaleRNG = upgradeLevel * 0.25
 
 color=make_color_hsv(random(255),random(255),random(255))
 color2=c_white
 
-if global.upgradeLevel[UPGRADE_TYPE.TEAR] > 3
+if upgradeLevel > 3
 {
 	color=make_color_hsv(random(255),random(150),random(255))
 }
-if global.upgradeLevel[UPGRADE_TYPE.TEAR] >=7
+if upgradeLevel >= 7
 {
 	if irandom(2)==0
 	{
