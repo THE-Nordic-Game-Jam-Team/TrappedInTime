@@ -13,7 +13,7 @@ if (upgradeLevel < maxUpgradeLevel)
 			{
 				if !instance_exists(oFade)
 				{
-					var fadeobj=instance_create_depth(x,y,-9999999999999,oFade)
+					var fadeobj=instance_create_depth(0,0,0,oFade)
 					
 					fadeobj.targetRoom=rmCreditsReal
 				}
