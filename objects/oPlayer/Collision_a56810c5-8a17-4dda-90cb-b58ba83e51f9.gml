@@ -1,5 +1,5 @@
 if (global.shieldHits > 0)
-	global.shieldHits--
+	global.shieldHits-=.5;
 else
 	global.timeLeft-=1.5
 

@@ -47,3 +47,38 @@ else
 			break
 	}
 }
+
+t = (t + increment) mod 360;
+shift = amplitude * dsin(t);
+
+shieldImage0+=.5
+shieldImage1+=1.1
+shieldImage2+=1.5
+
+if shieldImage0>=10
+	shieldImage0=0
+	
+if shieldImage1>=10
+	shieldImage1=0
+	
+if shieldImage2>=10
+	shieldImage2=0
+	
+	
+//wood custom collision
+var woodcol=collision_circle(x,y-4,15,oWood,0,0)
+
+if woodcol
+{
+	if (woodcol.speed < 1)
+	{
+		global.wood[woodcol.rarity] += 1
+		with (woodcol)
+		{
+			var effectspawn=instance_create_layer(x,y,"Instances",oFX)
+			effectspawn.sprite_index=sFXPickupGet
+		
+			instance_destroy()
+		}
+	}	
+}

@@ -14,7 +14,7 @@ difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.TELEPORT]
 
 if difficultyrating>0
 {
-	difficultyrating=difficultyrating/2
+	difficultyrating=difficultyrating/4
 	
 	if difficultyrating>difficultyratingMax
 		difficultyrating=difficultyratingMax

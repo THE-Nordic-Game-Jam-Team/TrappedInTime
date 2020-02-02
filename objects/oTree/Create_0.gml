@@ -4,3 +4,4 @@ rarity = 0
 maxHp = TREE_TIER_1_HP
 hp = maxHp
 hitCooldown = 0
+hitCooldownMax = 14

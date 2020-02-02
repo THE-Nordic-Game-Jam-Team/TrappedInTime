@@ -1,4 +1,4 @@
-if (other.speed < 1)
+/*if (other.speed < 1)
 {
 	global.wood[other.rarity] += 1
 	with (other)

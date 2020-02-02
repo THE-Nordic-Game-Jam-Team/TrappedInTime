@@ -25,7 +25,7 @@ if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(sp
 	if (hp <= 0)
 	{
 		image_index = 1
-		var woodSpawns = irandom_range(3, 8)
+		var woodSpawns = irandom_range(4, 8)
 		repeat(woodSpawns)
 		{
 			var newWood = instance_create_depth(x, y, 0, oWood)
@@ -48,6 +48,6 @@ if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(sp
 		newDebris.rarity = rarity
 		}
 			
-		hitCooldown = room_speed / 2
+		hitCooldown = hitCooldownMax//room_speed / 2
 	}
 }

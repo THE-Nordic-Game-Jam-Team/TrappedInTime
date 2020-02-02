@@ -9,3 +9,7 @@ audio_stop_all()
 
 if global.loopNumber > 0
 speed=5
+
+
+instance_create_layer(x,y,"Instances",oFXGlitch)
+instance_create_layer(x,y,"Instances",oFXNoise)
