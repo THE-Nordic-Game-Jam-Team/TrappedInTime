@@ -1,6 +1,9 @@
 
 if room==rmGame
 {
+	voidSpawn()
+	
+	
 	global.timeLeft -= timeRate / room_speed
 
 	if global.timeLeft<10
@@ -18,6 +21,8 @@ if room==rmGame
 
 	if (global.timeLeft <= 0)
 	{
+		scrDestroy(oVoid) //safety wipe
+		
 		room_goto(rmCreditsFake)
 		//newLoop()
 	}

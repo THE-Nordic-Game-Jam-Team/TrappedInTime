@@ -19,3 +19,6 @@ global.playerName = "Cupcakes"
 randomise() // Seed set based on player name in generateRoom script
 
 timeRate=1
+
+voidSpawnRateMax=60
+voidSpawnRate=0

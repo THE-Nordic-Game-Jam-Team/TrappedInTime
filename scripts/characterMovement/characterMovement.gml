@@ -18,6 +18,9 @@ pointDir = point_direction(x, y, x + hDir, y + vDir)
 var teleportLevel = getUpgradeLevel(UPGRADE_TYPE.TELEPORT)
 if (teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED) && global.dashCooldown <= 0)
 {
+	var xPrev=x
+	var yPrev=y
+	
 	var dashDistance = 80 * teleportLevel
 	x = clamp(x + lengthdir_x(dashDistance, pointDir), 0 + sprite_get_xoffset(sprite_index), room_width - sprite_get_xoffset(sprite_index))
 	y = clamp(y + lengthdir_y(dashDistance, pointDir), sprite_get_yoffset(sprite_index), room_height)
@@ -28,6 +31,22 @@ if (teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED) && 
 		x += sign(room_width/2 - x)
 		y += sign(room_height/2 - y)
 	}
+	
+	
+	var effectspawn=instance_create_layer(x,y,"Instances",oFX)
+	effectspawn.sprite_index=sFXTeleport
+	effectspawn.image_angle=point_direction(xPrev,yPrev,x,y)
+	
+	var afterImage0=instance_create_layer(x,y,"Instances",oAfterImage)
+	afterImage0.image_blend=c_fuchsia
+	afterImage0.sprite_index=sprite_index
+	afterImage0.image_index=image_index
+	afterImage0.image_xscale=image_xscale
+	var afterImage1=instance_create_layer((xPrev+x)/2,(yPrev+y)/2,"Instances",oAfterImage)
+	afterImage1.image_blend=c_aqua
+	afterImage1.sprite_index=sprite_index
+	afterImage1.image_index=image_index
+	afterImage1.image_xscale=image_xscale
 	
 	global.dashCooldown = (room_speed * 3 + room_speed / 2) - room_speed/2 * teleportLevel
 	exit // Don't do any other movement! The player is teleporting so that replaces it
