@@ -18,6 +18,7 @@ while (spawnCount < totalSpawns)
 		{
 			x = random_range(minX, maxX)
 			y = random_range(minY, maxY)
+			depth = -y
 		}
 		
 		// Once we've found a valid position, try spreading water pool
