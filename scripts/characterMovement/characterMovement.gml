@@ -22,9 +22,19 @@ if (teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED) && 
 	var yPrev=y
 	
 	var dashDistance = 20 + 60 * teleportLevel
+	var dashDir = pointDir
+	if (hDir == 0 && vDir == 0)
+	{
+		if (sprite_index == sPlayerDown || sprite_index == sPlayerCutDown)
+			dashDir = 270
+		else if (sprite_index == sPlayerUp || sprite_index == sPlayerCutUp)
+			dashDir = 90
+		else
+			dashDir = 90 - (90 * sign(image_xscale))
+	}
 
-	x = clamp(x + lengthdir_x(dashDistance, pointDir), 0 + sprite_get_xoffset(sprite_index), room_width - sprite_get_xoffset(sprite_index))
-	y = clamp(y + lengthdir_y(dashDistance, pointDir), sprite_get_yoffset(sprite_index), room_height)
+	x = clamp(x + lengthdir_x(dashDistance, dashDir), 0 + sprite_get_xoffset(sprite_index), room_width - sprite_get_xoffset(sprite_index))
+	y = clamp(y + lengthdir_y(dashDistance, dashDir), sprite_get_yoffset(sprite_index), room_height)
 	// If we landed on an obstacle, push the user towards the center of the room until they are free
 	// Center of the room because that way we are sure they don't get pushed off screen
 	while (position_meeting(x, y, oWall))
