@@ -22,12 +22,12 @@ arr[UPGRADE_TYPE.MAGNET, 1] = costArr(15, 0, 0)
 arr[UPGRADE_TYPE.MAGNET, 2] = costArr(0, 15, 0)
 arr[UPGRADE_TYPE.MAGNET, 3] = costArr(0, 5, 10)
 
-arr[UPGRADE_TYPE.TEAR, 1] = costArr(50, 0, 0)
-arr[UPGRADE_TYPE.TEAR, 2] = costArr(0, 40, 0)
-arr[UPGRADE_TYPE.TEAR, 3] = costArr(30, 30, 0)
-arr[UPGRADE_TYPE.TEAR, 4] = costArr(0, 0, 30)
-arr[UPGRADE_TYPE.TEAR, 5] = costArr(0, 20, 20)
+arr[UPGRADE_TYPE.TEAR, 1] = costArr(30, 0, 0)
+arr[UPGRADE_TYPE.TEAR, 2] = costArr(0, 20, 0)
+arr[UPGRADE_TYPE.TEAR, 3] = costArr(5, 10, 5)
+arr[UPGRADE_TYPE.TEAR, 4] = costArr(0, 0, 20)
+arr[UPGRADE_TYPE.TEAR, 5] = costArr(20, 30, 0)
 arr[UPGRADE_TYPE.TEAR, 6] = costArr(0, 25, 20)
-arr[UPGRADE_TYPE.TEAR, 7] = costArr(40, 40, 40)
+arr[UPGRADE_TYPE.TEAR, 7] = costArr(30, 30, 30)
 
 return arr

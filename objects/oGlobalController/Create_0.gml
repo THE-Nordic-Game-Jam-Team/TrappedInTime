@@ -1,4 +1,4 @@
-global.debug = true
+global.debug = false
 
 global.camX = 0
 global.camY = 0
@@ -19,8 +19,6 @@ global.countdown = room_speed * 3 // This will start counting down when the game
 global.gp = undefined
 
 randomise() // Seed set based on player name in generateRoom script
-
-timeRate=1
 
 voidSpawnRateMax=60
 voidSpawnRate=0
