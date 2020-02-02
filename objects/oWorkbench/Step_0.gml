@@ -12,6 +12,7 @@ if (upgradeLevel < maxUpgradeLevel)
 		
 			upgradeLevel++
 			global.upgradeLevel[type] = upgradeLevel
+			event_user(1)
 		
 			var effectspawn=instance_create_layer(x,y,"Instances",oFX)
 			effectspawn.sprite_index=sFXUpgrade

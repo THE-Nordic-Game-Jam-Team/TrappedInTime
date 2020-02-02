@@ -12,6 +12,7 @@ global.wood = array_create(3, ifElse(global.debug, 50, 0))
 global.upgradeLevel = array_create(6, 0)
 global.upgradeLevel[UPGRADE_TYPE.AXE] = 1 // Initialize axe to 1, because 0 = no axe and we want to start with it
 global.upgradeCosts = setupUpgradeCosts()
+global.shieldHits = 0
 
 // TODO: Implement name selection. Should have a 12 character limit so the generated seed does not cause an integer overflow
 global.playerName = "Cupcakes"

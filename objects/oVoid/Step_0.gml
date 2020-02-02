@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -y
 if instance_exists(oPlayer)
 {
 if distance_to_object(oPlayer)>1000

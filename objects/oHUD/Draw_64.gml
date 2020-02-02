@@ -47,5 +47,5 @@ if (getUpgradeLevel(UPGRADE_TYPE.MAGNET) > 0)
 }
 if (getUpgradeLevel(UPGRADE_TYPE.SHIELD) > 0)
 {
-	draw_sprite_ext(sShieldIcons, getUpgradeLevel(UPGRADE_TYPE.SHIELD)-1, 148, viewport_height - 4, 2, 2, 0, c_white, 1)
+	draw_sprite_ext(sShieldIcons, getUpgradeLevel(UPGRADE_TYPE.SHIELD)-1, 148, viewport_height - 4, 2, 2, 0, c_white, ifElse(global.shieldHits > 0, 1, 0.5))
 }
