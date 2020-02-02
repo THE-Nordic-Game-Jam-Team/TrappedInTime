@@ -11,7 +11,7 @@ while (dir < 360)
 	if (!position_meeting(x + hOffset, y + vOffset, oWall) && !position_meeting(x + hOffset, y + vOffset, oStartZone))
 	{
 		var roll = random_range(1, 10) - (distFromSource * 0.5)
-		if (roll >= 7)
+		if (roll >= 6)
 		{
 			newWater = instance_create_layer(x + hOffset, y + vOffset, "Water", oWater)
 			with (newWater)

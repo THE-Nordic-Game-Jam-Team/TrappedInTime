@@ -4,7 +4,7 @@ minX = 0
 minY = 0
 maxX = room_width - sprite_get_width(sWater)
 maxY = room_height - sprite_get_height(sWater)
-totalSpawns = 25
+totalSpawns = min(25 + (global.loopNumber+1) / 4, 50)
 spawnCount = 0
 
 while (spawnCount < totalSpawns)

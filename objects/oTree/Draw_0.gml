@@ -10,5 +10,5 @@ if (hp < maxHp && hp > 0 && instance_exists(oPlayer) && distance_to_object(oPlay
 	draw_rectangle(barStartX, barStartY, barStartX + round(50 * hp / maxHp), barStartY + 10, false)
 
 	draw_set_color(c_white)
-	draw_rectangle(barStartX, barStartY, barStartX + 50, barStartY + 10, true)
+	draw_rectangle(barStartX - 1, barStartY -1, barStartX + 50, barStartY + 10, true)
 }

@@ -8,7 +8,7 @@ minX = 32
 minY = 40
 maxX = room_width - 32
 maxY = room_height - 40
-totalSpawns = 60
+totalSpawns = min(100 + floor((global.loopNumber+1) / 2), 200)
 spawnCount = 0
 maxDistFromCenter = point_distance(0, 0, room_width/2, room_height/2)
 
@@ -53,7 +53,7 @@ while (spawnCount < totalSpawns)
 }
 
 // Still not enough of those higher-rarity tree types? Pick a few normal trees at random and convert them
-while (legendaryTreeCount < 3)
+while (legendaryTreeCount < min(10 + floor((global.loopNumber+1) / 5), 20))
 {
 	randX = random_range(minX, maxX)
 	randY = random_range(minY, maxY)
@@ -65,7 +65,7 @@ while (legendaryTreeCount < 3)
 	}
 }
 
-while (rareTreeCount < 3)
+while (rareTreeCount < min(10 + floor((global.loopNumber+1) / 5), 20))
 {
 	randX = random_range(minX, maxX)
 	randY = random_range(minY, maxY)
