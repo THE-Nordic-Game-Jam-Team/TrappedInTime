@@ -1,5 +1,5 @@
 music=0
-speed=.45
+speed=.425
 direction=90
 
 audio_stop_all()

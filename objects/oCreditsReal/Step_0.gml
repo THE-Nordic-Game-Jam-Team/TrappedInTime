@@ -1,4 +1,4 @@
-if (y + sprite_height < 400)
+if (y + sprite_height < 250)
 {
 	speed=0
 	//audio_stop_all()
