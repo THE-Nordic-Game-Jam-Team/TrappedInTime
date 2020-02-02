@@ -50,10 +50,8 @@ if (teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED) && 
 	afterImage1.image_xscale=image_xscale
 	
 	global.dashCooldown = (room_speed * 3 + room_speed / 2) - room_speed/2 * teleportLevel
-	exit // Don't do any other movement! The player is teleporting so that replaces it
 }
-
-if (vDir != 0 || hDir != 0)
+else if (vDir != 0 || hDir != 0) // Only moves the player if they didn't teleport
 {
 	var adjustX = ceil(lengthdir_x(moveSpeed, pointDir)) + ifElse(vDir != 0, sign(hDir), 0)
 	while (adjustX != 0 && !place_meeting(x + sign(adjustX), y, oWall))

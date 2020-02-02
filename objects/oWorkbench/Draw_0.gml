@@ -29,5 +29,13 @@ if (upgradeLevel < maxUpgradeLevel)
 				typesDrawn++
 			}
 		}
+		
+		// Text below upgrade station
+		draw_set_color(c_black)
+		draw_rectangle(x - 70, y + 6, x + 70, y + 22, false)
+		draw_set_color(c_white)
+		draw_set_halign(fa_middle)
+		draw_text(x, y + 14, "Press E or C to upgrade.")
+		event_user(0)
 	}
 }

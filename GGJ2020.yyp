@@ -875,6 +875,7 @@
             "Value": {
                 "id": "21c50129-3051-4498-8ee5-ad997c1c5556",
                 "resourcePath": "sprites\\sFXPlayerDamage\\sFXPlayerDamage.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
