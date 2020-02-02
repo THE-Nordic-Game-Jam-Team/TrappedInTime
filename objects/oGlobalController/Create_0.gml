@@ -16,6 +16,7 @@ global.shieldHits = 0
 
 global.playerName = ""
 global.countdown = room_speed * 3 // This will start counting down when the game begins
+global.gp = undefined
 
 randomise() // Seed set based on player name in generateRoom script
 
