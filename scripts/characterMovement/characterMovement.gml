@@ -21,7 +21,8 @@ if (teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED) && 
 	var xPrev=x
 	var yPrev=y
 	
-	var dashDistance = 80 * teleportLevel
+	var dashDistance = 20 + 60 * teleportLevel
+
 	x = clamp(x + lengthdir_x(dashDistance, pointDir), 0 + sprite_get_xoffset(sprite_index), room_width - sprite_get_xoffset(sprite_index))
 	y = clamp(y + lengthdir_y(dashDistance, pointDir), sprite_get_yoffset(sprite_index), room_height)
 	// If we landed on an obstacle, push the user towards the center of the room until they are free

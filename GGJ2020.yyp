@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "023fc3a2-f773-40e1-ac74-ec74ab486640",
+            "Value": {
+                "id": "daa17c5f-4ab0-400f-9898-e3ae75c95921",
+                "resourcePath": "sprites\\sShieldIcons\\sShieldIcons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "05762236-cc59-4141-acab-ffe46f87c98d",
             "Value": {
                 "id": "41dd1198-dfb5-4416-a04c-031c9ecc2f41",
@@ -535,6 +543,14 @@
             }
         },
         {
+            "Key": "9344adda-95ea-450b-811a-8d96e6bdfdec",
+            "Value": {
+                "id": "87da55ce-8bc4-40fc-87d0-6e61fb616614",
+                "resourcePath": "sprites\\sAxeIcons\\sAxeIcons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "94e8f7d5-ae5e-4847-a937-df2fdc8e1f1a",
             "Value": {
                 "id": "a24601db-5d2a-4c9a-9e82-c08f6daf9835",
@@ -679,6 +695,14 @@
             }
         },
         {
+            "Key": "c424ffe6-b493-49f0-a212-286bd8cdccab",
+            "Value": {
+                "id": "45287225-f33e-4f5c-ae88-a9460a3e32e3",
+                "resourcePath": "sprites\\sMagnetIcons\\sMagnetIcons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c519bcb5-7810-4538-b295-4b492dd3aace",
             "Value": {
                 "id": "58ca4b6d-16e5-441f-a281-a6c085588e73",
@@ -748,6 +772,14 @@
                 "id": "b03b5c6a-16f4-4e1f-88cd-b03c571096c2",
                 "resourcePath": "rooms\\rmCreditsFake\\rmCreditsFake.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d7cb5004-46a0-49d9-ad12-7b826260e402",
+            "Value": {
+                "id": "081edd6e-7c6d-4324-af00-ba7fd5dc65bb",
+                "resourcePath": "sprites\\sMoveSpeedIcons\\sMoveSpeedIcons.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -843,6 +875,13 @@
             "Value": {
                 "id": "21c50129-3051-4498-8ee5-ad997c1c5556",
                 "resourcePath": "sprites\\sFXPlayerDamage\\sFXPlayerDamage.yy",
+            }
+        },
+        {
+            "Key": "edb289ad-f78d-4d9a-aa43-f6efc123283d",
+            "Value": {
+                "id": "cec345f0-fc03-4e9b-821f-e70768b81760",
+                "resourcePath": "sprites\\sTeleportIcons\\sTeleportIcons.yy",
                 "resourceType": "GMSprite"
             }
         },
