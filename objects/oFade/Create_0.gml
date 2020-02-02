@@ -1,8 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
-depth=-9999999999
+depth=99999999
 color=c_white
-image_alpha=0
+alpha=0
 
 dir=1
 targetRoom=rmGame

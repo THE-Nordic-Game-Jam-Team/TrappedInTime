@@ -1,4 +1,4 @@
-global.debug = false
+global.debug = true
 
 global.camX = 0
 global.camY = 0

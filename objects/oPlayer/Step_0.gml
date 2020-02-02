@@ -13,6 +13,9 @@ else if (sprite_index = sPlayerPhaseIn)
 	image_speed = 0
 }
 
+if (global.win)
+	exit
+
 
 var swinging = (getUpgradeLevel(UPGRADE_TYPE.AXE) > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
 
@@ -21,7 +24,6 @@ if (global.dashCooldown > 0)
 	global.dashCooldown -= 1
 }
 
-if !global.win
 characterMovement(baseMoveSpeed, ifElse(swinging, sPlayerCutUp, sPlayerUp), ifElse(swinging, sPlayerCutDown, sPlayerDown), ifElse(swinging, sPlayerCutRight, sPlayerRight))
 
 if (swinging)
