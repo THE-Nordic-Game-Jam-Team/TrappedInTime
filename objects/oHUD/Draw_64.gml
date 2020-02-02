@@ -26,3 +26,26 @@ drawTextWithOutline(viewport_width / 2, 8, "Time\r\n" + displayTime)
 
 draw_set_halign(fa_right)
 drawTextWithOutline(viewport_width - 4, 4, "Loop " + string(global.loopNumber + 1))
+
+draw_set_halign(fa_left)
+draw_set_valign(fa_bottom)
+if (getUpgradeLevel(UPGRADE_TYPE.AXE) > 0)
+{
+	draw_sprite_ext(sAxeIcons, getUpgradeLevel(UPGRADE_TYPE.AXE)-1, 4, viewport_height - 4, 2, 2, 0, c_white, 1)
+}
+if (getUpgradeLevel(UPGRADE_TYPE.TELEPORT) > 0)
+{
+	draw_sprite_ext(sTeleportIcons, getUpgradeLevel(UPGRADE_TYPE.TELEPORT)-1, 40, viewport_height - 4, 2, 2, 0, c_white, ifElse(global.dashCooldown > 0, 0.5, 1))
+}
+if (getUpgradeLevel(UPGRADE_TYPE.MOVE_SPEED) > 0)
+{
+	draw_sprite_ext(sMoveSpeedIcons, getUpgradeLevel(UPGRADE_TYPE.MOVE_SPEED)-1, 76, viewport_height - 4, 2, 2, 0, c_white, 1)
+}
+if (getUpgradeLevel(UPGRADE_TYPE.MAGNET) > 0)
+{
+	draw_sprite_ext(sMagnetIcons, getUpgradeLevel(UPGRADE_TYPE.MAGNET)-1, 112, viewport_height - 4, 2, 2, 0, c_white, 1)
+}
+if (getUpgradeLevel(UPGRADE_TYPE.SHIELD) > 0)
+{
+	draw_sprite_ext(sShieldIcons, getUpgradeLevel(UPGRADE_TYPE.SHIELD)-1, 148, viewport_height - 4, 2, 2, 0, c_white, 1)
+}
