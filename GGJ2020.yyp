@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "796bc25f-cf4a-43d0-ab45-2f53ee298139",
+            "Value": {
+                "id": "c9aabc85-4608-46b5-b214-6a6dd0d9cf53",
+                "resourcePath": "sprites\\sPlayerPhaseIn\\sPlayerPhaseIn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7b3b27c2-e516-4fd6-913a-c57cd68de271",
             "Value": {
                 "id": "d0c6f6a8-6556-4d82-b47d-f56938de4b4f",

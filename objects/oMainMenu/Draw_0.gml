@@ -1,0 +1,1 @@
+draw_sprite(sMainMenuText, 0, 0, 0)

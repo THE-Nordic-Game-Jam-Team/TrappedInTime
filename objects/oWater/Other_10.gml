@@ -7,15 +7,18 @@ while (dir < 360)
 {
 	var hOffset = lengthdir_x(sprite_width, dir)
 	var vOffset = lengthdir_y(sprite_height, dir)
-	
-	var roll = random_range(1, 10) - (distFromSource * 0.5)
-	if (roll >= 7)
+	// Make sure that placing water at this new position is actually valid
+	if (!position_meeting(x + hOffset, y + vOffset, oWall) && !position_meeting(x + hOffset, y + vOffset, oStartZone))
 	{
-		newWater = instance_create_layer(x + hOffset, y + vOffset, "Water", oWater)
-		with (newWater)
+		var roll = random_range(1, 10) - (distFromSource * 0.5)
+		if (roll >= 7)
 		{
-			distFromSource = other.distFromSource + 1
-			event_user(0)
+			newWater = instance_create_layer(x + hOffset, y + vOffset, "Water", oWater)
+			with (newWater)
+			{
+				distFromSource = other.distFromSource + 1
+				event_user(0)
+			}
 		}
 	}
 	

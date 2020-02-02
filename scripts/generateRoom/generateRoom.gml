@@ -4,6 +4,13 @@
 // then just do math on top of that
 var charOrd
 var seed = ""
+
+ // This normally isn't possible. It's here mainly for debugging purposes
+if (global.playerName == "")
+{
+	global.playerName = "Viktor"
+}
+
 for(var i = 1; i <= string_length(global.playerName); i++)
 {
 	charOrd = string_ord_at(global.playerName, i)

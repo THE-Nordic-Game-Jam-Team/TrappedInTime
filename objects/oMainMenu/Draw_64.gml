@@ -4,10 +4,10 @@ draw_set_font(fntHUD)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 
-draw_text(viewport_width / 2, 180, "Enter name:")
+draw_text(viewport_width / 2, 148, "Enter name:")
 
 var nameX = viewport_width / 2
-var nameY = 212
+var nameY = 180
 draw_text(nameX, nameY, global.playerName)
 if (charCursorToggle)
 {
@@ -19,5 +19,5 @@ if (charCursorToggle)
 if (string_length(global.playerName) > 0)
 {
 	draw_set_halign(fa_middle)
-	draw_text(viewport_width / 2, 244, "Press enter to start.")
+	draw_text(viewport_width / 2, 212, "Press enter to start.")
 }

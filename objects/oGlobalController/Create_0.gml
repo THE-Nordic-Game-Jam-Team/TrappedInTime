@@ -1,4 +1,4 @@
-global.debug = false
+global.debug = true
 
 global.camX = 0
 global.camY = 0
@@ -15,6 +15,7 @@ global.upgradeCosts = setupUpgradeCosts()
 global.shieldHits = 0
 
 global.playerName = ""
+global.countdown = room_speed * 3 // This will start counting down when the game begins
 
 randomise() // Seed set based on player name in generateRoom script
 

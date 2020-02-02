@@ -1,4 +1,19 @@
 depth = -y
+if (global.countdown > 0)
+{
+	// Player is unable to act during countdown
+	sprite_index = sPlayerPhaseIn
+	image_speed = 1
+	exit
+}
+else if (sprite_index = sPlayerPhaseIn)
+{
+	// This should execute right after countdown finishes and never again
+	sprite_index = sPlayerDown
+	image_speed = 0
+}
+
+
 var swinging = (getUpgradeLevel(UPGRADE_TYPE.AXE) > 0 && buttonCheck(BUTTON_TYPE.ATTACK, BUTTON_EVENT.HELD))
 
 if (global.dashCooldown > 0)

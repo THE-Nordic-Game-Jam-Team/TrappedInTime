@@ -11,14 +11,19 @@ while (spawnCount < totalSpawns)
 {
 	randX = random_range(minX, maxX)
 	randY = random_range(minY, maxY)
-	if (!position_meeting(randX, randY, oWall) && !position_meeting(randX, randY, oStartZone))
+	newInst = instance_create_layer(randX, randY, "Water", oWater)
+	with (newInst)
 	{
-		newInst = instance_create_layer(randX, randY, "Water", oWater)
-		with (newInst)
+		while (position_meeting(x, y, oWall) || position_meeting(x, y, oStartZone))
 		{
-			distFromSource = 0
-			event_user(0)
+			x = random_range(minX, maxX)
+			y = random_range(minY, maxY)
 		}
-		spawnCount++
+		
+		// Once we've found a valid position, try spreading water pool
+		distFromSource = 0
+		event_user(0)
 	}
+
+	spawnCount++
 }
