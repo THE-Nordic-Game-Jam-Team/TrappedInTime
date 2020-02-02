@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oTimeTear",
     "eventList": [
-        
+        {
+            "id": "286a3547-00ba-47e5-a944-8ea7a67a30f1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "597c055d-09c1-41f3-b771-ae5ac4ae4d6d"
+        },
+        {
+            "id": "0b86f0e8-ac55-4b05-968f-8d17550c9c3a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "597c055d-09c1-41f3-b771-ae5ac4ae4d6d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

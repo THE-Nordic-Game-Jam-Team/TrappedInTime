@@ -32,9 +32,22 @@ if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(sp
 			newWood.parentTree = self
 			newWood.rarity = rarity
 		}
+		
+		var effectspawn=instance_create_layer(x,y,"Instances",oFX)
+		effectspawn.sprite_index=sFXTreeCut
 	}
 	else
 	{
+		var effectspawn=instance_create_layer(x,y,"Instances",oFX)
+		effectspawn.sprite_index=sFXTreeHit
+		
+		var debrisSpawns = irandom_range(4, 8)
+		repeat(debrisSpawns)
+		{
+		var newDebris = instance_create_depth(x, y, 0, oDebris)
+		newDebris.rarity = rarity
+		}
+			
 		hitCooldown = room_speed / 2
 	}
 }

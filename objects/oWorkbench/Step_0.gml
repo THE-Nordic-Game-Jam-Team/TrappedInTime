@@ -18,5 +18,8 @@ if (playerInRange && buttonCheck(BUTTON_TYPE.UPGRADE, BUTTON_EVENT.PRESSED))
 		
 		upgradeLevel++
 		global.upgradeLevel[type] = upgradeLevel
+		
+		var effectspawn=instance_create_layer(x,y,"Instances",oFX)
+		effectspawn.sprite_index=sFXUpgrade
 	}
 }

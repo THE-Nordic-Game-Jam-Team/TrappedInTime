@@ -17,3 +17,5 @@ global.upgradeCosts = setupUpgradeCosts()
 global.playerName = "Cupcakes"
 
 randomise() // Seed set based on player name in generateRoom script
+
+timeRate=1
