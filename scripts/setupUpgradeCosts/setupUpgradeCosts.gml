@@ -20,6 +20,7 @@ arr[UPGRADE_TYPE.MOVE_SPEED, 3] = costArr(15, 15, 15)
 
 arr[UPGRADE_TYPE.MAGNET, 1] = costArr(15, 0, 0)
 arr[UPGRADE_TYPE.MAGNET, 2] = costArr(0, 15, 0)
+arr[UPGRADE_TYPE.MAGNET, 3] = costArr(0, 5, 10)
 
 arr[UPGRADE_TYPE.TEAR, 1] = costArr(50, 0, 0)
 arr[UPGRADE_TYPE.TEAR, 2] = costArr(0, 40, 0)
