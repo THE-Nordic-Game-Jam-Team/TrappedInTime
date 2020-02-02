@@ -10,7 +10,7 @@ if (upgradeLevel < maxUpgradeLevel)
 			upgradeLevel++
 			if (upgradeLevel >= maxUpgradeLevel)
 			{
-				// YOU WON DA GAME. TAKE ME TO DA REAL CREDITS
+				room_goto(rmCreditsReal)
 			}
 		}
 	}

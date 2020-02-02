@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "7e409246-4933-46ab-8977-402f0d24d849",
+            "Value": {
+                "id": "3b242cf9-8661-4e78-91c3-4f55aa1d4827",
+                "resourcePath": "rooms\\rmCreditsReal\\rmCreditsReal.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7f0c2291-8fa5-498e-aff7-ce762f1fbae3",
             "Value": {
                 "id": "60410a31-766d-4bf2-9080-5457ecddef16",
@@ -915,6 +923,14 @@
             "Value": {
                 "id": "c080558c-73cb-4d78-8970-5020376ebf06",
                 "resourcePath": "objects\\oWorkbench\\oWorkbench.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dccbdb67-04d0-4cc0-936f-a9282054102c",
+            "Value": {
+                "id": "58a6f426-9434-4e85-bdb1-754663cf88d3",
+                "resourcePath": "objects\\oCreditsReal\\oCreditsReal.yy",
                 "resourceType": "GMObject"
             }
         },
