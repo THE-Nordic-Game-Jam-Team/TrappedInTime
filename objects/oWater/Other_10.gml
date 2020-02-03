@@ -8,7 +8,7 @@ while (dir < 360)
 	var hOffset = lengthdir_x(sprite_width, dir)
 	var vOffset = lengthdir_y(sprite_height, dir)
 	// Make sure that placing water at this new position is actually valid
-	if (!position_meeting(x + hOffset, y + vOffset, oWall) && !position_meeting(x + hOffset, y + vOffset, oStartZone))
+	if (!place_meeting(x + hOffset, y + vOffset, oWall) && !place_meeting(x + hOffset, y + vOffset, oStartZone))
 	{
 		var roll = random_range(1, 10) - (distFromSource * 0.5)
 		if (roll >= 6)
