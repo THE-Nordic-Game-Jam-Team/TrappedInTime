@@ -9,7 +9,9 @@ audio_stop_all()
 audio_play_sound(mscCreditsFake,0,0)
 
 if global.loopNumber > 0
-speed=5
+{
+speed=7
+}
 
 
 instance_create_layer(x,y,"Instances",oFXGlitch)

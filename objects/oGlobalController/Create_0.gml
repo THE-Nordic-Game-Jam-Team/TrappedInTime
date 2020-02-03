@@ -28,7 +28,7 @@ voidSpawnRateMax=60
 voidSpawnRate=0
 
 difficultyrating=0;
-difficultyratingMax=10 //max limit spawn rate we alow for sanity sake
+difficultyratingMax=8//10 //max limit spawn rate we alow for sanity sake
 
 
 musicval=0 //stage

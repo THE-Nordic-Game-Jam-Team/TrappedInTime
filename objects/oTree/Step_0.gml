@@ -21,6 +21,11 @@ if (healthbarDelay > 0)
 if (hp > 0 && hitCooldown = 0 && instance_exists(oAxe) && collision_rectangle(spriteLeftX, spriteTopY, spriteRightX, spriteBottomY, oAxe, false, true))
 {
 	hp = max(hp - getUpgradeLevel(UPGRADE_TYPE.AXE), 0)
+	
+	if getUpgradeLevel(UPGRADE_TYPE.AXE)>=5
+		if rarity==0
+			hp=0
+	
 	if (hp <= 0)
 	{
 		image_index = 1

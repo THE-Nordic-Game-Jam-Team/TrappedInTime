@@ -17,7 +17,7 @@ if (instance_exists(oPlayer) && canMagnet)
 {
 	var magnetLevel = getUpgradeLevel(UPGRADE_TYPE.MAGNET)
 	var distance = distance_to_object(oPlayer)
-	if (magnetLevel > 0 && distance <= 10 + (magnetLevel * 15))
+	if (magnetLevel > 0 && distance <= 10 + (magnetLevel * 16))
 	{
 		move_towards_point(oPlayer.x, oPlayer.y, min(2 + magnetLevel * 2, distance))
 	}

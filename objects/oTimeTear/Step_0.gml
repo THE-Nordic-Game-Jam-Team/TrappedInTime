@@ -17,6 +17,7 @@ if (upgradeLevel < maxUpgradeLevel)
 					
 					fadeobj.targetRoom=rmCreditsReal
 				}
+				
 				global.win=true
 			}
 		}
