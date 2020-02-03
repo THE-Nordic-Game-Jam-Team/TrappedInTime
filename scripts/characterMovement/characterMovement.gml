@@ -37,7 +37,7 @@ if (teleportLevel > 0 && buttonCheck(BUTTON_TYPE.DASH, BUTTON_EVENT.PRESSED) && 
 	y = clamp(y + lengthdir_y(dashDistance, dashDir), sprite_get_yoffset(sprite_index), room_height)
 	// If we landed on an obstacle, push the user towards the center of the room until they are free
 	// Center of the room because that way we are sure they don't get pushed off screen
-	while (position_meeting(x, y, oWall))
+	while (place_meeting(x, y, oWall))
 	{
 		x += sign(room_width/2 - x)
 		y += sign(room_height/2 - y)
