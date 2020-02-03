@@ -18,8 +18,8 @@ switch(type)
 		keyboardBtn1 = ord("D")
 		keyboardBtn2 = vk_right
 		gamepadAxis = 0
-		gamepadBtn1 = ifElse(os_type == os_switch, 13, 2)
-		gamepadBtn2 = ifElse(os_type == os_switch, 20, 2)
+		gamepadBtn1 = ifElse(os_type == os_switch, 13, 3)
+		gamepadBtn2 = ifElse(os_type == os_switch, 20, 3)
 		break
 	case BUTTON_TYPE.UP:
 		keyboardBtn1 = ord("W")
