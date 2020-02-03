@@ -14,12 +14,15 @@ global.upgradeLevel[UPGRADE_TYPE.AXE] = 1 // Initialize axe to 1, because 0 = no
 global.upgradeCosts = setupUpgradeCosts()
 global.shieldHits = 0
 
-global.playerName = ""
+
+randomise() // Seed set based on player name in generateRoom script
+
+global.playerName = ifElse(os_type == os_switch, string(irandom_range(1000, 999999999)), "")
 global.countdown = room_speed * 3 // This will start counting down when the game begins
 global.gp = undefined
 global.win = false
+global.lastGpButton = -1
 
-randomise() // Seed set based on player name in generateRoom script
 
 voidSpawnRateMax=60
 voidSpawnRate=0

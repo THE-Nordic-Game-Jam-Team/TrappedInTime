@@ -11,16 +11,24 @@ if (global.playerName == "")
 	global.playerName = "Viktor"
 }
 
-for(var i = 1; i <= string_length(global.playerName); i++)
+// We don't have a way to input names on Switch so it generates a random number as the player name. Just use that
+if (os_type == os_switch)
 {
-	charOrd = string_ord_at(global.playerName, i)
-	if (i <= 6)
+	seed = global.playerName
+}
+else
+{
+	for(var i = 1; i <= string_length(global.playerName); i++)
 	{
-		seed = seed + string(charOrd)
-	}
-	else
-	{
-		seed = real(seed) + charOrd
+		charOrd = string_ord_at(global.playerName, i)
+		if (i <= 6)
+		{
+			seed = seed + string(charOrd)
+		}
+		else
+		{
+			seed = real(seed) + charOrd
+		}
 	}
 }
 

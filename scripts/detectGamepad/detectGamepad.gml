@@ -20,7 +20,10 @@ for (var i = 0; i < gamepad_get_device_count(); i++)
 		for (var j = 0; j < gamepad_button_count(i); j++)
 		{
 			if (gamepad_button_check(i, j))
+			{
 				global.gp = i
+				global.lastGpButton = j
+			}
 		}
 		for (var k = 0; k < gamepad_axis_count(i); k++)
 		{

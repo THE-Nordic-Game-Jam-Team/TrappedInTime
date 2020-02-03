@@ -10,7 +10,7 @@ if (hp < maxHp && hp > 0 && instance_exists(oPlayer) && (healthbarDelay > 0 || d
 	draw_rectangle(barStartX, barStartY, barStartX + round(50 * hp / maxHp), barStartY + 10, false)
 
 	draw_set_color(c_white)
-	draw_rectangle(barStartX - 1, barStartY -1, barStartX + 50, barStartY + 10, true)
+	draw_rectangle(barStartX - ifElse(os_type == os_switch, 0, 1), barStartY - ifElse(os_type == os_switch, 0, 1), barStartX + 50, barStartY + ifElse(os_type == os_switch, 11, 10), true)
 	
 	// Hackish delay so that if the axe hits it on any frame, the healthbar doesn't go in and out
 	if (instance_exists(oAxe) && collision_rectangle(spriteLeftX, spriteTopY, spriteRightX, spriteBottomY, oAxe, false, true))
