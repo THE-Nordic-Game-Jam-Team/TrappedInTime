@@ -4,7 +4,8 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+      "default",
+      "default;debug"
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +26,7 @@
             }
         ],
         "hiddenResources": [
-            
+
         ],
         "projectPath": "${base_project}"
     },

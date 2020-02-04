@@ -30,3 +30,7 @@ enum UPGRADE_TYPE {
 #macro HITS_PER_SHIELD 1
 #macro MAX_NAME_LENGTH 12
 #macro GP_DEADZONE 0.25
+
+// set debug to true ONLY for the debug configuration
+#macro DEBUG false
+#macro debug:DEBUG true

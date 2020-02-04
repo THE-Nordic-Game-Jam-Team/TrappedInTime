@@ -1,4 +1,4 @@
-if (global.debug)
+if (DEBUG)
 {
 	global.timeLeft += 1
 }
