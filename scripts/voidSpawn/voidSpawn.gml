@@ -1,11 +1,11 @@
 //logic for spawning VOID
 
 difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.AXE]-1
-difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.TEAR]*2
-difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.MAGNET]
-difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.MOVE_SPEED]
-difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.SHIELD]
-difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.TELEPORT]
+difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.TEAR]*1.5
+difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.MAGNET]*.5
+difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.MOVE_SPEED]*.5
+difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.SHIELD]*.5
+difficultyrating+=global.upgradeLevel[UPGRADE_TYPE.TELEPORT]*.5
 
 
 if difficultyrating>0

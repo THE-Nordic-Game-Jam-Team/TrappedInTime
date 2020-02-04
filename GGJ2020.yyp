@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "44740344-ae42-4f77-b6fb-77e705f816c0",
+            "Value": {
+                "id": "1707da47-0649-483e-8dfd-646d8323f2f7",
+                "resourcePath": "sprites\\sUITearNav\\sUITearNav.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46033bdc-867b-4216-bb7a-bc191c14c121",
             "Value": {
                 "id": "590ed40c-dada-42bd-9dcd-d471bec3cb9c",

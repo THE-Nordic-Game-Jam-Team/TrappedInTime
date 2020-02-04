@@ -12,3 +12,5 @@ shieldImage1=0
 shieldImage2=0
 
 playerCenter=-12
+
+tearNavRot=0

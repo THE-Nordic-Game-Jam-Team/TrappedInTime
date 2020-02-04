@@ -11,16 +11,16 @@ arr[UPGRADE_TYPE.TELEPORT, 2] = costArr(10, 5, 0)
 arr[UPGRADE_TYPE.TELEPORT, 3] = costArr(15, 10, 5)
 
 arr[UPGRADE_TYPE.SHIELD, 1] = costArr(22, 0, 0)
-arr[UPGRADE_TYPE.SHIELD, 2] = costArr(18, 15, 0)
+arr[UPGRADE_TYPE.SHIELD, 2] = costArr(25, 12, 0)
 arr[UPGRADE_TYPE.SHIELD, 3] = costArr(30, 16, 6)
 
 arr[UPGRADE_TYPE.MOVE_SPEED, 1] = costArr(15, 0, 0)
 arr[UPGRADE_TYPE.MOVE_SPEED, 2] = costArr(15, 10, 0)
 arr[UPGRADE_TYPE.MOVE_SPEED, 3] = costArr(15, 15, 10)
 
-arr[UPGRADE_TYPE.MAGNET, 1] = costArr(17, 0, 0)
-arr[UPGRADE_TYPE.MAGNET, 2] = costArr(0, 19, 0)
-arr[UPGRADE_TYPE.MAGNET, 3] = costArr(15, 5, 15)
+arr[UPGRADE_TYPE.MAGNET, 1] = costArr(15, 0, 0)
+arr[UPGRADE_TYPE.MAGNET, 2] = costArr(5, 18, 0)
+arr[UPGRADE_TYPE.MAGNET, 3] = costArr(15, 7, 15)
 
 arr[UPGRADE_TYPE.TEAR, 1] = costArr(25, 0, 0)
 arr[UPGRADE_TYPE.TEAR, 2] = costArr(0, 25, 0)

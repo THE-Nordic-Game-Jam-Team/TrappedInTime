@@ -4,7 +4,7 @@ image_blend = -1
 image_alpha = 1
 draw_self()
 
-if (upgradeLevel < maxUpgradeLevel)
+if canUpgrade
 {
 	draw_sprite(sprite_index, upgradeLevel + 1, x, y)
 	

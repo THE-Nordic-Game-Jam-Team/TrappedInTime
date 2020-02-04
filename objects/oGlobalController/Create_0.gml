@@ -22,7 +22,7 @@ global.countdown = room_speed * 3 // This will start counting down when the game
 global.gp = undefined
 global.win = false
 global.lastGpButton = -1
-
+global.musicSet=0
 
 voidSpawnRateMax=60
 voidSpawnRate=0

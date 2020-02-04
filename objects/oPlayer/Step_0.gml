@@ -101,3 +101,9 @@ if woodcol
 		}
 	}	
 }
+
+if instance_exists(oTimeTear)
+{
+
+tearNavRot=point_direction(x,y,oTimeTear.x,oTimeTear.y)	
+}
